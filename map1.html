@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>COVID-19 Cases (2020)</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="map" data-map="rates"></div>
+    <div id="title"> COVID-19 Case Rates </div>
+    <div id="subtitle"> Cases per 1,000 residents (2020) </div>
+
+    <div class="map-overlay" id="features">
+        <h2>COVID-19 Case Rates (2020)</h2>
+        <div id="text-description">
+            <p>Hover over a county</p>
+        </div>
+    </div>
+
+    <div id="source">
+        Data: New York Times COVID-19 | Population: ACS 2018
+    </div>
+    
+    <div class="map-overlay" id="legend"></div>
+
+    <script src="js/rates.js"></script>
+
+</body>
+</html>
